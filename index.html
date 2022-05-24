@@ -1,0 +1,151 @@
+<!-- Happy One Month Anniversary! -->
+
+<html>
+     <head>
+          <meta charset = "utf-8">
+          <title>Happy One Month!</title>
+          <style>
+               #headerBar {
+                    height: 250px;
+                    width: 100%;
+                    background-color: rgb(170, 241, 255);
+                    text-align: center;
+                    margin: 0px 0px 0px 0px;
+                    font-size: 50;
+                    font-family: 'Courier New', Courier, monospace;
+                    /* font-family: 'Arial'; */
+                    color: black;
+                    line-height: 4;
+               }
+               #subtitle {
+                    position: absolute;
+                    width: 100%;
+                    margin: auto;
+                    top: 150px;
+                    background-color:"none";
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: 35;
+                    color: black;
+                    text-align:center;
+               }
+               #heart {
+                    position: relative;
+                    width: 100%;
+                    margin-top: 20px;
+                    margin-bottom: -180px;
+               }
+               .center {
+                 display: block;
+                 margin-left: auto;
+                 margin-right: auto;
+                 width: 200px;
+               }
+
+               /* Photo Grid */
+               .photoGrid {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+                    margin-left: 10%;
+               }
+
+               /* Create four equal columns that sits next to each other */
+               .column {
+                    flex: 25%;
+                    max-width: 23%;
+                    padding: 0 4px;
+               }
+
+               .column img {
+                    margin-top: 8px;
+                    vertical-align: middle;
+                    width: 100%;
+               }
+
+               /* Responsive layout - makes a two column-layout instead of four columns */
+               @media screen and (max-width: 800px) {
+                    .column {
+                         flex: 50%;
+                         max-width: 50%;
+                    }
+               }
+
+               /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+               @media screen and (max-width: 600px) {
+                    .column {
+                         flex: 100%;
+                         max-width: 100%;
+                    }
+               }
+               .rotateimg90 {
+                    -webkit-transform:rotate(90deg);
+                    -moz-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                    padding-top: 25%;
+               }
+          </style>
+     </head>
+     <body>
+          <div id="headerBar">Happy One Month!</div>
+          <div id="subtitle">&#127867; <em>and to many more</em> &#127867;</div>
+          <div id="heart">
+               <img id="heartImg" src="https://user-images.githubusercontent.com/65101372/81490457-8edb5800-9250-11ea-96da-ab0064a52c25.png" class="center">
+          </div> 
+          <p><br><br><br><br><br><br><br><br><br></p>
+          <script>
+               var clicks = 0;
+               var clickHeart = document.getElementById("clickHeart");
+               var heartImg = document.getElementById("heartImg");
+               var onClick = function() {
+                    clicks++;
+                    if(clicks<=5) {
+                         heartImg.style.width = (heartImg.clientWidth+50) + "px";
+                    }
+                    else {
+                         if (clicks%2==0)
+                              heartImg.style.width = (heartImg.clientWidth-50) + "px";
+                         else {
+                              heartImg.style.width = (heartImg.clientWidth+50) + "px";
+                         }
+                    }
+               }
+               heartImg.addEventListener("click",onClick);
+          </script>
+
+          <div class="photoGrid">
+               <div class="column">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930913-460424de-bdf4-4198-a9ed-5eafb3ee1220.png">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930747-236c905d-f907-41f3-aaa9-2e048a0d187b.png">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930760-0821b46b-1c04-40c1-9450-abf1bde6dd10.png">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930762-af5fe96e-db4a-4482-9292-6ce728f334c4.png">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930773-152a0954-6bba-4db1-9212-f4238f56b87f.png">
+               </div>
+               <div class="column">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930870-6edce86f-f50b-48f9-ba83-898c4b825d6b.png">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930875-e7473ccb-1746-46ae-bc71-e465bf0346ff.png">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930884-fb340d9b-dc5a-48c8-81d8-7c303bb2c54e.png">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930891-5d31d93c-f1dc-4828-8132-dbf9f886d5d8.png">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930899-143d5db0-2eec-4289-a381-4f401b36b8b7.png">
+               </div>
+               <div class="column">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930795-7eb7f51e-38a4-40ed-ad85-2e92574c7604.png">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930835-7861f12c-3e6b-4937-ad8f-2af31542ad68.png">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930840-10a1de38-60ad-466e-8c09-82a40d8447fc.png">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930845-8b61d63d-9426-42f0-9cc6-41243b441b11.png">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930858-d421e891-5a6d-43a9-ab36-f6c8ad10fdd7.png">
+               </div>
+               <div class="column">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930787-6a776d11-1d4b-4f82-9b2b-289f90545774.png" class="rotateimg90">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930800-ea98bec1-bda7-4b03-9ddc-c5b8ea5365a4.png" class="rotateimg90">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930805-96ab2b59-b20f-43d9-bb46-550f43ff6018.png" class="rotateimg90">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930809-3c79b00b-a93f-4bc5-9fa9-ca00359b531d.png" class="rotateimg90">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930817-57cdfa67-325b-4aec-b4b5-fa9bda649148.png" class="rotateimg90">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930825-fca6e828-2941-44ea-95aa-2f2dcff5fbb9.png" class="rotateimg90">
+                    <img src="https://user-images.githubusercontent.com/65101372/169930829-244f3ae9-3ae5-427e-b702-2f9ef7134cf2.png" class="rotateimg90">
+               </div> 
+          </div>
+
+     </body>
+</html>
